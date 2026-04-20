@@ -1,0 +1,87 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    font-family: 'Segoe UI', sans-serif;
+    margin-left: 3%;
+}
+
+header, footer {
+    background: #1a1a2e;
+    color: #e0e0e0;
+    padding: 24px 40px;
+    width: 100%;
+}
+
+header {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 24px 0;
+}
+
+.Card, .List {
+    border-radius: 8px;
+    padding: 16px 24px;
+    margin-bottom: 10px;
+}
+
+.List {
+    padding-left: 40px;
+    line-height: 2;
+}
+
+.Link {
+    color: #4f8ef7;
+    text-decoration: none;
+    display: inline-block;
+    margin: 16px 0 8px;
+}
+
+.Button {
+    background: #1a1a2e;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    border-radius: 6px;
+    margin-bottom: 24px;
+}
+
+.QaTitle {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.QaList {
+    padding: 0;
+}
+
+.QaList > li {
+    margin-bottom: 16px;
+}
+
+.QaQuestion {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
