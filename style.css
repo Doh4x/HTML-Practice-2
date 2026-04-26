@@ -171,10 +171,6 @@ h1, h2, h3 {
     padding: 10px 16px;
 }
 
-.ExpTable tbody tr:nth-child(even) {
-    background: #f0f0ff;
-}
-
 .StatusDone {
     color: #09aa00;
     font-weight: 700;
