@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Формы</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="SiteHeader">
+        <div class="SiteHeaderInner">
+            <span class="SiteTitle">Лос полос херманос</span>
+            <span class="SiteSubtitle">Формы</span>
+        </div>
+    </header>
+
+    <nav class="SiteNav">
+        <ul class="NavList">
+            <li><a href="#registration" class="NavLink">Регистрация</a></li>
+            <li><a href="#filter" class="NavLink">Фильтр</a></li>
+            <li><a href="#feedback" class="NavLink">Обратная связь</a></li>
+            <li><a href="#questionnaire" class="NavLink">Анкета</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section id="registration">
+            <h2 class="SectionTitle">Регистрация</h2>
+
+            <form class="Form" action="#" method="post">
+                <div class="FormGroup">
+                    <label class="FormLabel" for="FirstName">Имя <span class="Required">*</span></label>
+                    <input class="FormInput" type="text" id="FirstName" name="FirstName" placeholder="Гаврила" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="LastName">Фамилия <span class="Required">*</span></label>
+                    <input class="FormInput" type="text" id="LastName" name="LastName" placeholder="Жарко" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Email">Email <span class="Required">*</span></label>
+                    <input class="FormInput" type="email" id="Email" name="Email" placeholder="fring@lospollos.com" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Phone">Телефон <span class="Required">*</span></label>
+                    <input class="FormInput" type="tel" id="Phone" name="Phone" placeholder="+7 (999) 000-00-00" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Password">Пароль <span class="Required">*</span></label>
+                    <input class="FormInput" type="password" id="Password" name="Password" placeholder="Минимум 8 символов" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="PasswordConfirm">Подтверждение пароля <span class="Required">*</span></label>
+                    <input class="FormInput" type="password" id="PasswordConfirm" name="PasswordConfirm" placeholder="Повторите пароль" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="BirthDate">Дата рождения <span class="Required">*</span></label>
+                    <input class="FormInput" type="date" id="BirthDate" name="BirthDate" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel">Пол <span class="Required">*</span></label>
+                    <div class="RadioGroup">
+                        <label class="RadioLabel">
+                            <input type="radio" name="Gender" value="male" required> Мужской
+                        </label>
+                        <label class="RadioLabel">
+                            <input type="radio" name="Gender" value="female"> Женский
+                        </label>
+                        <label class="RadioLabel">
+                            <input type="radio" name="Gender" value="other"> Не указывать
+                        </label>
+                    </div>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="CheckboxLabel">
+                        <input type="checkbox" name="Agreement" required>
+                        Я согласен с условиями конфиденциальности и переработки персональных данных <span class="Required">*</span>
+                    </label>
+                </div>
+
+                <div class="FormButtons">
+                    <input type="submit" class="ButtonPrimary" value="Зарегистрироваться">
+                    <input type="reset" class="ButtonSecondary" value="Очистить">
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="filter">
+            <h2 class="SectionTitle">Фильтр каталога</h2>
+
+            <form class="Form" action="#" method="get">
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Search">Поиск</label>
+                    <input class="FormInput" type="search" id="Search" name="Search" placeholder="Что ищете?">
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Category">Категория</label>
+                    <select class="FormSelect" id="Category" name="Category">
+                        <option value="">Все категории</option>
+                        <option value="restaurants">Рестораны</option>
+                        <option value="labs">Лаборатории</option>
+                        <option value="logistics">Логистика</option>
+                        <option value="consulting">Консалтинг</option>
+                    </select>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Sort">Сортировка</label>
+                    <select class="FormSelect" id="Sort" name="Sort">
+                        <option value="new">Сначала новые</option>
+                        <option value="old">Сначала старые</option>
+                        <option value="price-asc">По цене: дешевле</option>
+                        <option value="price-desc">По цене: дороже</option>
+                        <option value="rating">По рейтингу</option>
+                    </select>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel">Диапазон зарплаты</label>
+                    <div class="RangeGroup">
+                        <input class="FormInput RangeInput" type="number" name="PriceMin" placeholder="От" min="0">
+                        <div class="RangeSep">-</div>
+                        <input class="FormInput RangeInput" type="number" name="PriceMax" placeholder="До" min="0">
+                    </div>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel">Тип занятости</label>
+                    <div class="CheckboxGroup">
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="Type" value="full"> Полная занятость
+                        </label>
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="Type" value="part"> Частичная занятость
+                        </label>
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="Type" value="remote"> Удалённо
+                        </label>
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="Type" value="field"> Полевые работы
+                        </label>
+                    </div>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel">Опыт работы</label>
+                    <div class="RadioGroup">
+                        <label class="RadioLabel">
+                            <input type="radio" name="Experience" value="any"> Любой
+                        </label>
+                        <label class="RadioLabel">
+                            <input type="radio" name="Experience" value="junior"> До 1 года
+                        </label>
+                        <label class="RadioLabel">
+                            <input type="radio" name="Experience" value="middle"> 1 - 3 года
+                        </label>
+                        <label class="RadioLabel">
+                            <input type="radio" name="Experience" value="senior"> Более 3 лет
+                        </label>
+                    </div>
+                </div>
+
+                <div class="FormButtons">
+                    <input type="submit" class="ButtonPrimary" value="Применить">
+                    <input type="reset" class="ButtonSecondary" value="Сбросить">
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="feedback">
+            <h2 class="SectionTitle">Обратная связь</h2>
+
+            <form class="Form" action="#" method="post" enctype="multipart/form-data">
+                <div class="FormGroup">
+                    <label class="FormLabel" for="FeedbackName">Имя <span class="Required">*</span></label>
+                    <input class="FormInput" type="text" id="FeedbackName" name="FeedbackName" placeholder="Ваше имя" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="FeedbackEmail">Email <span class="Required">*</span></label>
+                    <input class="FormInput" type="email" id="FeedbackEmail" name="FeedbackEmail" placeholder="your@email.com" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Subject">Тема <span class="Required">*</span></label>
+                    <input class="FormInput" type="text" id="Subject" name="Subject" placeholder="Тема обращения" required>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Message">Сообщение <span class="Required">*</span></label>
+                    <textarea class="FormTextarea" id="Message" name="Message" rows="6" placeholder="Опишите ваш вопрос подробно..." required></textarea>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Priority">Приоритет обращения <span class="Required">*</span></label>
+                    <select class="FormSelect" id="Priority" name="Priority" required>
+                        <option value="">Выберите приоритет</option>
+                        <option value="low">Низкий - можно подождать</option>
+                        <option value="normal">Обычный - в рабочем порядке</option>
+                        <option value="high">Высокий - нужно быстро</option>
+                        <option value="critical">Критический - срочно</option>
+                    </select>
+                </div>
+
+                <div class="FormGroup">
+                    <label class="FormLabel" for="Attachment">Прикрепить файл</label>
+                    <input class="FormFile" type="file" id="Attachment" name="Attachment" accept=".pdf,.jpg,.png,.doc,.docx">
+                    <span class="FormHint">PDF, JPG, PNG, DOC до 10 МБ</span>
+                </div>
+
+                <div class="FormButtons">
+                    <input type="submit" class="ButtonPrimary" value="Отправить">
+                </div>
+            </form>
+        </section>
+
+        <hr>
+
+        <section id="questionnaire">
+            <h2 class="SectionTitle">Анкета кандидата</h2>
+
+            <form class="Form" action="#" method="post" enctype="multipart/form-data">
+
+                <fieldset class="FormFieldset">
+                    <legend class="FormLegend">Личные данные</legend>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QFirstName">Имя <span class="Required">*</span></label>
+                        <input class="FormInput" type="text" id="QFirstName" name="QFirstName" placeholder="Гаврила" required>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QLastName">Фамилия <span class="Required">*</span></label>
+                        <input class="FormInput" type="text" id="QLastName" name="QLastName" placeholder="Жарко" required>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QMiddleName">Отчество</label>
+                        <input class="FormInput" type="text" id="QMiddleName" name="QMiddleName" placeholder="При наличии">
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QBirthDate">Дата рождения <span class="Required">*</span></label>
+                        <input class="FormInput" type="date" id="QBirthDate" name="QBirthDate" required>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel">Пол <span class="Required">*</span></label>
+                        <div class="RadioGroup">
+                            <label class="RadioLabel">
+                                <input type="radio" name="QGender" value="male" required> Мужской
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="QGender" value="female"> Женский
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QCity">Город проживания <span class="Required">*</span></label>
+                        <input class="FormInput" type="text" id="QCity" name="QCity" placeholder="Альбукерке" required>
+                    </div>
+                </fieldset>
+
+                <fieldset class="FormFieldset">
+                    <legend class="FormLegend">Контакты</legend>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QEmail">Email <span class="Required">*</span></label>
+                        <input class="FormInput" type="email" id="QEmail" name="QEmail" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QPhone">Телефон <span class="Required">*</span></label>
+                        <input class="FormInput" type="tel" id="QPhone" name="QPhone" placeholder="+7 (999) 000-00-00" required>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QTelegram">Telegram</label>
+                        <input class="FormInput" type="text" id="QTelegram" name="QTelegram" placeholder="@username">
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QLinkedin">Ссылка на профиль или портфолио</label>
+                        <input class="FormInput" type="url" id="QLinkedin" name="QLinkedin" placeholder="https://github.com/username">
+                    </div>
+                </fieldset>
+
+                <fieldset class="FormFieldset">
+                    <legend class="FormLegend">Предпочтения</legend>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QRole">Желаемая должность <span class="Required">*</span></label>
+                        <select class="FormSelect" id="QRole" name="QRole" required>
+                            <option value="">Выберите роль</option>
+                            <option value="frontend">Frontend-разработчик</option>
+                            <option value="backend">Backend-разработчик</option>
+                            <option value="fullstack">Fullstack-разработчик</option>
+                            <option value="manager">Менеджер операций</option>
+                            <option value="chef">Шеф-повар</option>
+                        </select>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QSalary">Желаемая зарплата (руб.)</label>
+                        <input class="FormInput" type="number" id="QSalary" name="QSalary" placeholder="300000" min="0" step="1000">
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel">Формат работы <span class="Required">*</span></label>
+                        <div class="RadioGroup">
+                            <label class="RadioLabel">
+                                <input type="radio" name="QWorkFormat" value="office" required> Офис
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="QWorkFormat" value="remote"> Удалённо
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="QWorkFormat" value="hybrid"> Гибрид
+                            </label>
+                            <label class="RadioLabel">
+                                <input type="radio" name="QWorkFormat" value="field"> Полевая работа
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel">Готовность к командировкам</label>
+                        <div class="CheckboxGroup">
+                            <label class="CheckboxLabel">
+                                <input type="checkbox" name="QTravel" value="local"> По городу
+                            </label>
+                            <label class="CheckboxLabel">
+                                <input type="checkbox" name="QTravel" value="country"> По стране
+                            </label>
+                            <label class="CheckboxLabel">
+                                <input type="checkbox" name="QTravel" value="international"> За рубеж
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+
+                <fieldset class="FormFieldset">
+                    <legend class="FormLegend">Дополнительная информация</legend>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QAbout">О себе <span class="Required">*</span></label>
+                        <textarea class="FormTextarea" id="QAbout" name="QAbout" rows="5" placeholder="Расскажите почему вы подходите для этой роли..." required></textarea>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QStartDate">Дата готовности к выходу</label>
+                        <input class="FormInput" type="date" id="QStartDate" name="QStartDate">
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="FormLabel" for="QResume">Прикрепить резюме</label>
+                        <input class="FormFile" type="file" id="QResume" name="QResume" accept=".pdf,.doc,.docx">
+                        <span class="FormHint">PDF или DOC до 5 МБ</span>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="QConsent" required>
+                            Даю согласие на обработку персональных данных <span class="Required">*</span>
+                        </label>
+                    </div>
+
+                    <div class="FormGroup">
+                        <label class="CheckboxLabel">
+                            <input type="checkbox" name="QNewsletter">
+                            Хочу получать новости об открытых вакансиях
+                        </label>
+                    </div>
+                </fieldset>
+
+                <div class="FormButtons">
+                    <input type="submit" class="ButtonPrimary" value="Отправить анкету">
+                    <input type="reset" class="ButtonSecondary" value="Очистить">
+                </div>
+
+            </form>
+        </section>
+
+        <hr>
+
+    </main>
+
+    <footer>
+        <p>Знаешь море? Я его волную.</p>
+        <p>© Джейсон Стетхем</p>
+    </footer>
+
+</body>
+
+</html>

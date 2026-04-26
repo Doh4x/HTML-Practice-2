@@ -1,0 +1,293 @@
+html, body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin-left: 3%;
+    padding-bottom: 120px;
+}
+
+header, footer {
+    background: #0000ff;
+    color: #e0e0e0;
+    padding: 24px 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.SiteHeader {
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.SiteHeaderInner {
+    display: flex;
+    align-items: baseline;
+    gap: 16px;
+}
+
+.SiteTitle {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.SiteSubtitle {
+    font-size: 14px;
+    color: #b0b0e0;
+}
+
+nav.SiteNav {
+    background: #0000cc;
+    padding: 0 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.NavList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 4px;
+}
+
+.NavLink {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    padding: 10px 16px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.NavLink:hover {
+    background: #0000ff;
+    color: #09ff00;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #09ff00;
+    margin: 24px 0;
+}
+
+h2 {
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.SectionTitle {
+    font-size: 22px;
+    margin: 24px 0 16px;
+}
+
+.Form {
+    max-width: 560px;
+    padding: 8px 0;
+}
+
+.FormFieldset {
+    border: 2px solid #0000ff;
+    border-radius: 4px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+.FormLegend {
+    background: #0000ff;
+    color: #fff;
+    padding: 4px 14px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.FormGroup {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.FormLabel {
+    font-size: 14px;
+    margin-bottom: 6px;
+    letter-spacing: 0.3px;
+}
+
+.Required {
+    color: #0000ff;
+}
+
+.FormInput {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    padding: 8px 12px;
+    outline: none;
+    background: #fff;
+    transition: border-color 0.15s;
+}
+
+.FormInput:focus {
+    border-color: #0000ff;
+}
+
+.FormInput:invalid:not(:placeholder-shown) {
+    border-color: #cc0000;
+}
+
+.FormSelect {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    padding: 8px 12px;
+    outline: none;
+    background: #fff;
+    cursor: pointer;
+}
+
+.FormSelect:focus {
+    border-color: #0000ff;
+}
+
+.FormTextarea {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    padding: 8px 12px;
+    outline: none;
+    background: #fff;
+    resize: vertical;
+    transition: border-color 0.15s;
+}
+
+.FormTextarea:focus {
+    border-color: #0000ff;
+}
+
+.FormFile {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 13px;
+    padding: 6px 0;
+    cursor: pointer;
+}
+
+.FormHint {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 12px;
+    color: #888;
+    margin-top: 4px;
+}
+
+.RadioGroup {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+}
+
+.RadioLabel {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.RadioLabel input {
+    accent-color: #0000ff;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.CheckboxGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.CheckboxLabel {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 14px;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.CheckboxLabel input {
+    accent-color: #0000ff;
+    width: 16px;
+    height: 16px;
+    margin-top: 2px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.RangeGroup {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.RangeInput {
+    width: 120px;
+}
+
+.RangeSep {
+    font-size: 18px;
+    color: #888;
+}
+
+.FormButtons {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.ButtonPrimary {
+    background: #0000ff;
+    color: #fff;
+    border: none;
+    padding: 10px 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.ButtonPrimary:hover {
+    background: #0000cc;
+}
+
+.ButtonSecondary {
+    background: #fff;
+    color: #0000ff;
+    border: 2px solid #0000ff;
+    padding: 8px 28px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+
+.ButtonSecondary:hover {
+    background: #f0f0ff;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.8;
+    box-sizing: border-box;
+}
+
+footer p {
+    margin: 0;
+}
