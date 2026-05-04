@@ -27,20 +27,20 @@ hr {
     margin: 24px 0;
 }
 
-.SectionTitle {
+.sectionTitle {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 16px;
 }
 
-.ResumeBlock {
+.resumeBlock {
     display: flex;
     align-items: center;
     gap: 24px;
     padding: 24px 0 8px;
 }
 
-.Avatar {
+.avatar {
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -48,19 +48,19 @@ hr {
     object-fit: cover;
 }
 
-.ResumeName {
+.resumeName {
     font-size: 28px;
     font-weight: 700;
     letter-spacing: 1px;
 }
 
-.ResumeProfession {
+.resumeProfession {
     font-size: 16px;
     color: #555;
     margin-top: 6px;
 }
 
-.AboutText {
+.aboutText {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     line-height: 1.8;
@@ -68,7 +68,7 @@ hr {
     margin-bottom: 12px;
 }
 
-.List {
+.list {
     border-radius: 100%;
     padding: 16px 24px;
     padding-left: 40px;
@@ -76,73 +76,81 @@ hr {
     line-height: 2;
 }
 
-.ContactList {
+.contactList {
     list-style: none;
     padding: 0;
     line-height: 2.2;
 }
 
-.Link {
+.link {
     color: #4f8ef7;
     text-decoration: none;
     display: inline-block;
     margin: 2px 0;
 }
 
-.Link:hover {
+.link:hover {
     text-decoration: underline;
 }
 
-.ExpTable {
-    border-collapse: collapse;
+.tableWrapper {
     width: 95%;
     margin-bottom: 16px;
 }
 
-.TableCaption {
+.tableCaption {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 8px;
     text-align: left;
-    caption-side: top;
     padding-bottom: 8px;
     color: #333;
 }
 
-.ExpTable th {
+.expGrid {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto;
+    border-top: 1px solid #09ff00;
+    border-left: 1px solid #09ff00;
+}
+
+.gridHeader {
     background: #0000ff;
     color: #fff;
     padding: 10px 16px;
     text-align: left;
     letter-spacing: 0.5px;
+    border-right: 1px solid #09ff00;
+    border-bottom: 1px solid #09ff00;
 }
 
-.ExpTable td {
-    border: 1px solid #09ff00;
+.gridCell {
     padding: 10px 16px;
+    border-right: 1px solid #09ff00;
+    border-bottom: 1px solid #09ff00;
 }
 
-.StatusDone {
+.statusDone {
     color: #09aa00;
     font-weight: 700;
 }
 
-.StatusProgress {
+.statusProgress {
     color: #0000ff;
     font-weight: 700;
 }
 
-.InlineBlockDemo {
+.inlineBlockDemo {
     max-width: 700px;
 }
 
-.DemoLabel {
+.demoLabel {
     font-size: 14px;
     color: #666;
     margin: 16px 0 6px;
 }
 
-.InlineTag {
+.inlineTag {
     background: #0000ff;
     color: #fff;
     padding: 4px 14px;
@@ -151,27 +159,27 @@ hr {
     margin-right: 6px;
 }
 
-.BlockItem {
+.blockItem {
     background: #f0f0ff;
     border-left: 4px solid #0000ff;
     padding: 10px 16px;
     margin-bottom: 6px;
 }
 
-.MixedParagraph {
+.mixedParagraph {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     line-height: 1.8;
     max-width: 600px;
 }
 
-.InlineHighlight {
+.inlineHighlight {
     background: #09ff00;
     padding: 0 6px;
     color: #000;
 }
 
-.SeparatedBlock {
+.separatedBlock {
     border: 2px solid #0000ff;
     border-radius: 100%;
     padding: 12px 20px;
@@ -180,19 +188,19 @@ hr {
     text-align: center;
 }
 
-.LinkList {
+.linkList {
     list-style: none;
     padding: 0;
     line-height: 2.4;
 }
 
-.LinkList li {
+.linkList li {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.LinkBadge {
+.linkBadge {
     background: #0000ff;
     color: #fff;
     font-size: 11px;
