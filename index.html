@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flexbox Базаовичок</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="taskMenu">
+        <div class="taskMenu-logo">Лос Полос</div>
+        <nav class="taskMenu-nav">
+            <a href="#center" class="navLink">О нас</a>
+            <a href="#grid" class="navLink">Филиалы</a>
+            <a href="#team" class="navLink">Сотрудники</a>
+            <a href="#panel" class="navLink">Логистика</a>
+            <a href="#contacts" class="navLink">Контакты</a>
+        </nav>
+        <button class="buttonSecondary">Войти в систему</button>
+    </header>
+
+    <main>
+
+        <section id="center" class="taskCentering">
+            <div class="centeredBlock">
+                <h2 class="centeredBlock-title">Идеальный баланс</h2>
+                <p class="centeredBlock-text">
+                    В нашем деле важна точность. Этот блок идеально отцентрирован 
+                    по вертикали и горизонтали, как и наши стандарты качества.
+                </p>
+                <button class="buttonPrimary">Оценить качество</button>
+            </div>
+        </section>
+
+        <section id="grid">
+            <h2 class="sectionTitle">Задача 3: Сетка карточек (10 партий)</h2>
+            <div class="flexGrid">
+                <div class="flexGrid-item">Партия 001</div>
+                <div class="flexGrid-item">Партия 002</div>
+                <div class="flexGrid-item">Партия 003</div>
+                <div class="flexGrid-item">Партия 004</div>
+                <div class="flexGrid-item">Партия 005</div>
+                <div class="flexGrid-item">Партия 006</div>
+                <div class="flexGrid-item">Партия 007</div>
+                <div class="flexGrid-item">Партия 008</div>
+                <div class="flexGrid-item">Партия 009</div>
+                <div class="flexGrid-item">Партия 010</div>
+            </div>
+        </section>
+
+        <section id="team">
+            <h2 class="sectionTitle">Задача 4: Наша команда</h2>
+            <div class="teamGrid">
+
+                <article class="userCard">
+                    <img src="Icon1.jpg" alt="Гаврила Жарко" class="userCard-avatar">
+                    <h3 class="userCard-name">Гаврила Жарко</h3>
+                    <p class="userCard-role">Владелец сети</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+                <article class="userCard">
+                    <img src="Icon2.jpg" alt="Майк Эрмантраут" class="userCard-avatar">
+                    <h3 class="userCard-name">Майк Эрмантраут</h3>
+                    <p class="userCard-role">Начальник службы безопасности</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+                <article class="userCard">
+                    <img src="Icon3.jpg" alt="Уолтер Уайт" class="userCard-avatar">
+                    <h3 class="userCard-name">Волтух Белый</h3>
+                    <p class="userCard-role">Главный технолог</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+                <article class="userCard">
+                    <img src="Icon4.png" alt="Джесси Пинкман" class="userCard-avatar">
+                    <h3 class="userCard-name">Джесси Розовый</h3>
+                    <p class="userCard-role">Ассистент технолога</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+                <article class="userCard">
+                    <img src="Icon5.jpg" alt="Сол Гудман" class="userCard-avatar">
+                    <h3 class="userCard-name">Сол Гудман</h3>
+                    <p class="userCard-role">Юридический консультант</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+                <article class="userCard">
+                    <img src="Icon6.jpg" alt="Гейл Беттикер" class="userCard-avatar">
+                    <h3 class="userCard-name">Гейл Беттикер</h3>
+                    <p class="userCard-role">Лаборант-перфекционист</p>
+                    <button class="userCard-button">Подробнее</button>
+                </article>
+
+            </div>
+        </section>
+
+        <section id="panel">
+            <h2 class="sectionTitle">Задача 5: Панель действий</h2>
+            <div class="actionPanel">
+                <h3 class="actionPanel-title">Управление поставками на Юг</h3>
+                <div class="actionPanel-buttons">
+                    <button class="buttonSecondary">Отменить</button>
+                    <button class="buttonSecondary">Сохранить черновик</button>
+                    <button class="buttonPrimary">Подтвердить отправку</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Знаешь море? Я его волную.</p>
+        <p>© Джейсон Стетхем</p>
+    </footer>
+
+</body>
+
+</html>
