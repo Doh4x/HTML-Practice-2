@@ -19,35 +19,35 @@ header, footer {
     box-sizing: border-box;
 }
 
-.SiteHeader {
+.siteHeader {
     font-size: 20px;
     letter-spacing: 1px;
 }
 
-.SiteHeaderInner {
+.siteHeaderInner {
     display: flex;
     align-items: baseline;
     gap: 16px;
 }
 
-.SiteTitle {
+.siteTitle {
     font-size: 22px;
     font-weight: 700;
 }
 
-.SiteSubtitle {
+.siteSubtitle {
     font-size: 14px;
     color: #b0b0e0;
 }
 
-nav.SiteNav {
+nav.siteNav {
     background: #0000cc;
     padding: 0 40px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.NavList {
+.navList {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -55,7 +55,7 @@ nav.SiteNav {
     gap: 4px;
 }
 
-.NavLink {
+.navLink {
     display: block;
     color: #e0e0e0;
     text-decoration: none;
@@ -64,7 +64,7 @@ nav.SiteNav {
     letter-spacing: 0.5px;
 }
 
-.NavLink:hover {
+.navLink:hover {
     background: #0000ff;
     color: #09ff00;
 }
@@ -80,21 +80,21 @@ h2, h3 {
     margin: 0 0 16px;
 }
 
-.SectionTitle {
+.sectionTitle {
     font-size: 22px;
     margin: 28px 0 20px;
 }
 
-.CardGrid {
+.cardGrid {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
 }
 
 
-/* UserCard */
+/* userCard */
 
-.UserCard {
+.userCard {
     background: #fff;
     border: 2px solid #0000ff;
     padding: 24px;
@@ -105,11 +105,11 @@ h2, h3 {
     text-align: center;
 }
 
-.UserCard:hover {
+.userCard:hover {
     border-color: #09ff00;
 }
 
-.UserCard-Avatar {
+.userCard-avatar {
     width: 80px;
     height: 80px;
     border-radius: 100%;
@@ -118,19 +118,19 @@ h2, h3 {
     margin-bottom: 14px;
 }
 
-.UserCard-Name {
+.userCard-name {
     font-size: 18px;
     margin: 0 0 4px;
 }
 
-.UserCard-Role {
+.userCard-role {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 13px;
     color: #0000ff;
     margin: 0 0 12px;
 }
 
-.UserCard-Bio {
+.userCard-bio {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 13px;
     line-height: 1.6;
@@ -138,26 +138,26 @@ h2, h3 {
     margin: 0 0 16px;
 }
 
-.UserCard-Stats {
+.userCard-stats {
     display: flex;
     gap: 12px;
     margin-bottom: 18px;
 }
 
-.UserCard-Stat {
+.userCard-stat {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 12px;
     color: #666;
     text-align: center;
 }
 
-.UserCard-Stat strong {
+.userCard-stat strong {
     display: block;
     font-size: 18px;
     color: #000;
 }
 
-.UserCard-Link {
+.userCard-link {
     background: #0000ff;
     color: #fff;
     text-decoration: none;
@@ -167,15 +167,15 @@ h2, h3 {
     margin-top: auto;
 }
 
-.UserCard-Link:hover {
+.userCard-link:hover {
     background: #09ff00;
     color: #000;
 }
 
 
-/* ProductCard */
+/* productCard */
 
-.ProductCard {
+.productCard {
     background: #fff;
     border: 2px solid #0000ff;
     width: 240px;
@@ -184,15 +184,15 @@ h2, h3 {
     position: relative;
 }
 
-.ProductCard:hover {
+.productCard:hover {
     border-color: #09ff00;
 }
 
-.ProductCard--Unavailable {
+.productCard--unavailable {
     opacity: 0.7;
 }
 
-.ProductCard-Badge {
+.productCard-badge {
     position: absolute;
     top: 12px;
     left: 0;
@@ -203,28 +203,28 @@ h2, h3 {
     letter-spacing: 0.5px;
 }
 
-.ProductCard-Badge--New {
+.productCard-badge--new {
     background: #09aa00;
 }
 
-.ProductCard-Badge--Sold {
+.productCard-badge--sold {
     background: #888;
 }
 
-.ProductCard-Image {
+.productCard-image {
     width: 100%;
     height: 160px;
     object-fit: cover;
     display: block;
 }
 
-.ProductCard-Name {
+.productCard-name {
     font-size: 16px;
     margin: 0;
     padding: 16px 16px 8px;
 }
 
-.ProductCard-Desc {
+.productCard-desc {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 13px;
     line-height: 1.6;
@@ -234,7 +234,7 @@ h2, h3 {
     flex-grow: 1;
 }
 
-.ProductCard-Footer {
+.productCard-footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -242,13 +242,13 @@ h2, h3 {
     border-top: 1px solid #09ff00;
 }
 
-.ProductCard-Price {
+.productCard-price {
     font-size: 16px;
     font-weight: 700;
     color: #0000ff;
 }
 
-.ProductCard-Button {
+.productCard-button {
     background: #0000ff;
     color: #fff;
     border: none;
@@ -259,20 +259,20 @@ h2, h3 {
     letter-spacing: 0.3px;
 }
 
-.ProductCard-Button:hover:not(:disabled) {
+.productCard-button:hover:not(:disabled) {
     background: #09ff00;
     color: #000;
 }
 
-.ProductCard-Button:disabled {
+.productCard-button:disabled {
     background: #ccc;
     cursor: not-allowed;
 }
 
 
-/* ArticleCard */
+/* articleCard */
 
-.ArticleCard {
+.articleCard {
     background: #fff;
     border: 2px solid #0000ff;
     border-left: 6px solid #09ff00;
@@ -282,25 +282,25 @@ h2, h3 {
     flex-direction: column;
 }
 
-.ArticleCard:hover {
+.articleCard:hover {
     border-color: #0000ff;
     border-left-color: #0000ff;
 }
 
-.ArticleCard-Meta {
+.articleCard-meta {
     display: flex;
     align-items: center;
     gap: 10px;
     margin-bottom: 12px;
 }
 
-.ArticleCard-Date {
+.articleCard-date {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 12px;
     color: #888;
 }
 
-.ArticleCard-Tag {
+.articleCard-tag {
     background: #0000ff;
     color: #fff;
     font-size: 11px;
@@ -308,13 +308,13 @@ h2, h3 {
     letter-spacing: 0.4px;
 }
 
-.ArticleCard-Title {
+.articleCard-title {
     font-size: 16px;
     margin: 0 0 10px;
     line-height: 1.3;
 }
 
-.ArticleCard-Text {
+.articleCard-text {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 13px;
     line-height: 1.7;
@@ -323,7 +323,7 @@ h2, h3 {
     flex-grow: 1;
 }
 
-.ArticleCard-Link {
+.articleCard-link {
     color: #0000ff;
     text-decoration: none;
     font-size: 13px;
@@ -334,7 +334,7 @@ h2, h3 {
     padding-bottom: 1px;
 }
 
-.ArticleCard-Link:hover {
+.articleCard-link:hover {
     color: #09aa00;
     border-bottom-color: #09aa00;
 }
