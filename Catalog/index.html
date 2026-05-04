@@ -1,45 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <title>Catalog - Laptops</title>
+    <title>Каталог Los Pollos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <h1>LaptopHub</h1>
+
+    <header class="siteHeader">
+        <div class="siteHeaderInner">
+            <span class="siteTitle">Лос Полос Херманос</span>
+            <span class="siteSubtitle">Официальный каталог продукции</span>
+        </div>
     </header>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Catalog</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
+    <main>
+        <section id="catalog">
+            <h2 class="sectionTitle">Наши предложения</h2>
+            
+            <div class="cardGrid">
+                
+                <article class="productCard">
+                    <img src="Icon1.jpg" alt="Ведро курицы" class="productCard-image">
+                    <div class="productCard-content">
+                        <h3 class="productCard-title">Фирменное ведро Los Pollos</h3>
+                        <p class="productCard-desc">Классический рецепт, который так любят наши клиенты. Отборная фермерская курица, бережная обжарка и строжайший контроль качества на каждом этапе.</p>
+                    </div>
+                    <div class="productCard-footer">
+                        <button class="productCard-button">Заказать доставку</button>
+                    </div>
+                </article>
 
-    <section class="products">
-        <div class="product">
-            <img src="laptop1.jpg" alt="Laptop 1">
-            <h3>Gaming Laptop</h3>
-            <p>High performance for gaming and work.</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product">
-            <img src="laptop2.jpg" alt="Laptop 2">
-            <h3>Ultrabook</h3>
-            <p>Lightweight and powerful for everyday use.</p>
-            <button>Buy Now</button>
-        </div>
-        <div class="product">
-            <img src="laptop3.jpg" alt="Laptop 3">
-            <h3>Business Laptop</h3>
-            <p>Reliable and secure for professionals.</p>
-            <button>Buy Now</button>
-        </div>
-    </section>
+                <article class="productCard">
+                    <img src="Icon2.jpg" alt="Корпоративный набор" class="productCard-image">
+                    <div class="productCard-content">
+                        <h3 class="productCard-title">Специальный расширенный корпоративный набор для выездных и ночных мероприятий</h3>
+                        <p class="productCard-desc">Идеально подходит для поездок в пустыню. Включает плотные мешки, промышленные химические средства, лопату и гарантию полной конфиденциальности. Мы решаем проблемы так чисто, что это кажется судьбой.</p>
+                    </div>
+                    <div class="productCard-footer">
+                        <button class="productCard-button">Оформить спецзаказ</button>
+                    </div>
+                </article>
+
+                <article class="productCard">
+                    <img src="Icon3.jpg" alt="Синяя карамель" class="productCard-image">
+                    <div class="productCard-content">
+                        <h3 class="productCard-title">ВысокоочищеннаяСиняяКарамельСпециальногоНазначения</h3>
+                        <p class="productCard-desc">Уникальный продукт от нашего лучшего повара. Стабильная чистота 99.1%. Остерегайтесь дешевых подделок с добавлением чили-перца.</p>
+                    </div>
+                    <div class="productCard-footer">
+                        <button class="productCard-button">Связаться с дистрибьютором</button>
+                    </div>
+                </article>
+
+                <article class="productCard">
+                    <img src="Icon4.jpg" alt="Фирменный соус" class="productCard-image">
+                    <div class="productCard-content">
+                        <h3 class="productCard-title">Фирменный соус</h3>
+                        <p class="productCard-desc">Идеально скрывает любые привкусы. И любые улики.</p>
+                    </div>
+                    <div class="productCard-footer">
+                        <button class="productCard-button">Добавить к заказу</button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2023 LaptopHub. All rights reserved.</p>
+        <p>Знаешь море? Я его волную.</p>
+        <p>© Джейсон Стетхем</p>
     </footer>
+
 </body>
+
 </html>
