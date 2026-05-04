@@ -17,35 +17,35 @@ header, footer {
     box-sizing: border-box;
 }
 
-.SiteHeader {
+.siteHeader {
     font-size: 20px;
     letter-spacing: 1px;
 }
 
-.SiteHeaderInner {
+.siteHeaderInner {
     display: flex;
     align-items: baseline;
     gap: 16px;
 }
 
-.SiteTitle {
+.siteTitle {
     font-size: 22px;
     font-weight: 700;
 }
 
-.SiteSubtitle {
+.siteSubtitle {
     font-size: 14px;
     color: #b0b0e0;
 }
 
-nav.SiteNav {
+nav.siteNav {
     background: #0000cc;
     padding: 0 40px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.NavList {
+.navList {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ nav.SiteNav {
     gap: 4px;
 }
 
-.NavLink {
+.navLink {
     display: block;
     color: #e0e0e0;
     text-decoration: none;
@@ -62,7 +62,7 @@ nav.SiteNav {
     letter-spacing: 0.5px;
 }
 
-.NavLink:hover {
+.navLink:hover {
     background: #0000ff;
     color: #09ff00;
 }
@@ -78,19 +78,19 @@ h1, h2, h3 {
     margin: 0 0 16px;
 }
 
-.SectionTitle {
+.sectionTitle {
     font-size: 22px;
     margin-bottom: 16px;
 }
 
-.ResumeBlock {
+.resumeBlock {
     display: flex;
     align-items: center;
     gap: 24px;
     padding: 24px 0 8px;
 }
 
-.Avatar {
+.avatar {
     width: 120px;
     height: 120px;
     border-radius: 100%;
@@ -98,18 +98,18 @@ h1, h2, h3 {
     object-fit: cover;
 }
 
-.ResumeName {
+.resumeName {
     font-size: 28px;
     letter-spacing: 1px;
 }
 
-.ResumeProfession {
+.resumeProfession {
     font-size: 16px;
     color: #555;
     margin-top: 6px;
 }
 
-.AboutText {
+.aboutText {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     line-height: 1.8;
@@ -117,7 +117,7 @@ h1, h2, h3 {
     margin-bottom: 12px;
 }
 
-.List {
+.list {
     border-radius: 100%;
     padding: 16px 24px;
     padding-left: 40px;
@@ -125,77 +125,86 @@ h1, h2, h3 {
     line-height: 2;
 }
 
-.ContactList {
+.contactList {
     list-style: none;
     padding: 0;
     line-height: 2.2;
 }
 
-.Link {
+.link {
     color: #4f8ef7;
     text-decoration: none;
     display: inline-block;
     margin: 2px 0;
 }
 
-.Link:hover {
+.link:hover {
     text-decoration: underline;
 }
 
-.ExpTable {
-    border-collapse: collapse;
+/* Стили для Grid-таблицы */
+.tableWrapper {
     width: 95%;
     margin-bottom: 16px;
 }
 
-.TableCaption {
+.tableCaption {
     font-size: 15px;
     font-weight: 700;
     margin-bottom: 8px;
     text-align: left;
-    caption-side: top;
     padding-bottom: 8px;
     color: #333;
 }
 
-.ExpTable th {
+.expGrid {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr auto;
+    border-top: 1px solid #09ff00;
+    border-left: 1px solid #09ff00;
+}
+
+.gridHeader {
     background: #0000ff;
     color: #fff;
     padding: 10px 16px;
     text-align: left;
     letter-spacing: 0.5px;
+    border-right: 1px solid #09ff00;
+    border-bottom: 1px solid #09ff00;
 }
 
-.ExpTable td {
-    border: 1px solid #09ff00;
+.gridCell {
     padding: 10px 16px;
+    border-right: 1px solid #09ff00;
+    border-bottom: 1px solid #09ff00;
 }
 
-.StatusDone {
+.statusDone {
     color: #09aa00;
     font-weight: 700;
 }
 
-.StatusProgress {
+.statusProgress {
     color: #0000ff;
     font-weight: 700;
 }
 
-.InlineBlockDemo {
+.inlineBlockDemo {
     max-width: 700px;
 }
 
-.DemoLabel {
+.demoLabel {
     font-size: 14px;
     color: #666;
     margin: 16px 0 6px;
 }
 
-.DemoRow {
+.demoRow {
     margin-bottom: 8px;
 }
 
-.InlineTag {
+.inlineTag {
     background: #0000ff;
     color: #fff;
     padding: 4px 14px;
@@ -204,27 +213,27 @@ h1, h2, h3 {
     margin-right: 6px;
 }
 
-.BlockItem {
+.blockItem {
     background: #f0f0ff;
     border-left: 4px solid #0000ff;
     padding: 10px 16px;
     margin-bottom: 6px;
 }
 
-.MixedParagraph {
+.mixedParagraph {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 15px;
     line-height: 1.8;
     max-width: 600px;
 }
 
-.InlineHighlight {
+.inlineHighlight {
     background: #09ff00;
     padding: 0 6px;
     color: #000;
 }
 
-.SeparatedBlock {
+.separatedBlock {
     border: 2px solid #0000ff;
     border-radius: 100%;
     padding: 12px 20px;
@@ -233,7 +242,7 @@ h1, h2, h3 {
     text-align: center;
 }
 
-.NewsArticle {
+.newsArticle {
     border-left: 4px solid #09ff00;
     padding: 16px 20px;
     margin-bottom: 20px;
@@ -241,12 +250,12 @@ h1, h2, h3 {
     background: #f0f0ff;
 }
 
-.NewsTitle {
+.newsTitle {
     font-size: 18px;
     margin-bottom: 6px;
 }
 
-.NewsDate {
+.newsDate {
     display: block;
     font-size: 12px;
     color: #888;
@@ -254,14 +263,14 @@ h1, h2, h3 {
     font-family: 'Arial Narrow Bold', sans-serif;
 }
 
-.NewsText {
+.newsText {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
-.NewsLink {
+.newsLink {
     color: #0000ff;
     text-decoration: none;
     font-size: 13px;
@@ -269,24 +278,24 @@ h1, h2, h3 {
     letter-spacing: 0.5px;
 }
 
-.NewsLink:hover {
+.newsLink:hover {
     text-decoration: underline;
     color: #09ff00;
 }
 
-.LinkList {
+.linkList {
     list-style: none;
     padding: 0;
     line-height: 2.4;
 }
 
-.LinkList li {
+.linkList li {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.LinkBadge {
+.linkBadge {
     background: #0000ff;
     color: #fff;
     font-size: 11px;
