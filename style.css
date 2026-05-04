@@ -17,35 +17,35 @@ header, footer {
     box-sizing: border-box;
 }
 
-.SiteHeader {
+.siteHeader {
     font-size: 20px;
     letter-spacing: 1px;
 }
 
-.SiteHeaderInner {
+.siteHeaderInner {
     display: flex;
     align-items: baseline;
     gap: 16px;
 }
 
-.SiteTitle {
+.siteTitle {
     font-size: 22px;
     font-weight: 700;
 }
 
-.SiteSubtitle {
+.siteSubtitle {
     font-size: 14px;
     color: #b0b0e0;
 }
 
-nav.SiteNav {
+nav.siteNav {
     background: #0000cc;
     padding: 0 40px;
     width: 100%;
     box-sizing: border-box;
 }
 
-.NavList {
+.navList {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -53,7 +53,7 @@ nav.SiteNav {
     gap: 4px;
 }
 
-.NavLink {
+.navLink {
     display: block;
     color: #e0e0e0;
     text-decoration: none;
@@ -62,7 +62,7 @@ nav.SiteNav {
     letter-spacing: 0.5px;
 }
 
-.NavLink:hover {
+.navLink:hover {
     background: #0000ff;
     color: #09ff00;
 }
@@ -78,24 +78,24 @@ h2 {
     margin: 0 0 16px;
 }
 
-.SectionTitle {
+.sectionTitle {
     font-size: 22px;
     margin: 24px 0 16px;
 }
 
-.Form {
+.form {
     max-width: 560px;
     padding: 8px 0;
 }
 
-.FormFieldset {
+.formFieldset {
     border: 2px solid #0000ff;
     border-radius: 4px;
     padding: 20px 24px;
     margin-bottom: 24px;
 }
 
-.FormLegend {
+.formLegend {
     background: #0000ff;
     color: #fff;
     padding: 4px 14px;
@@ -103,23 +103,23 @@ h2 {
     letter-spacing: 0.5px;
 }
 
-.FormGroup {
+.formGroup {
     display: flex;
     flex-direction: column;
     margin-bottom: 16px;
 }
 
-.FormLabel {
+.formLabel {
     font-size: 14px;
     margin-bottom: 6px;
     letter-spacing: 0.3px;
 }
 
-.Required {
+.required {
     color: #0000ff;
 }
 
-.FormInput {
+.formInput {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     border: 2px solid #ccc;
@@ -129,15 +129,15 @@ h2 {
     transition: border-color 0.15s;
 }
 
-.FormInput:focus {
+.formInput:focus {
     border-color: #0000ff;
 }
 
-.FormInput:invalid:not(:placeholder-shown) {
+.formInput:invalid:not(:placeholder-shown) {
     border-color: #cc0000;
 }
 
-.FormSelect {
+.formSelect {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     border: 2px solid #ccc;
@@ -147,11 +147,11 @@ h2 {
     cursor: pointer;
 }
 
-.FormSelect:focus {
+.formSelect:focus {
     border-color: #0000ff;
 }
 
-.FormTextarea {
+.formTextarea {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     border: 2px solid #ccc;
@@ -162,31 +162,31 @@ h2 {
     transition: border-color 0.15s;
 }
 
-.FormTextarea:focus {
+.formTextarea:focus {
     border-color: #0000ff;
 }
 
-.FormFile {
+.formFile {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 13px;
     padding: 6px 0;
     cursor: pointer;
 }
 
-.FormHint {
+.formHint {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 12px;
     color: #888;
     margin-top: 4px;
 }
 
-.RadioGroup {
+.radioGroup {
     display: flex;
     flex-wrap: wrap;
     gap: 8px 20px;
 }
 
-.RadioLabel {
+.radioLabel {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     display: flex;
@@ -195,20 +195,20 @@ h2 {
     cursor: pointer;
 }
 
-.RadioLabel input {
+.radioLabel input {
     accent-color: #0000ff;
     width: 16px;
     height: 16px;
     cursor: pointer;
 }
 
-.CheckboxGroup {
+.checkboxGroup {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.CheckboxLabel {
+.checkboxLabel {
     font-family: 'Arial Narrow Bold', sans-serif;
     font-size: 14px;
     display: flex;
@@ -218,7 +218,7 @@ h2 {
     line-height: 1.5;
 }
 
-.CheckboxLabel input {
+.checkboxLabel input {
     accent-color: #0000ff;
     width: 16px;
     height: 16px;
@@ -227,28 +227,28 @@ h2 {
     flex-shrink: 0;
 }
 
-.RangeGroup {
+.rangeGroup {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.RangeInput {
+.rangeInput {
     width: 120px;
 }
 
-.RangeSep {
+.rangeSep {
     font-size: 18px;
     color: #888;
 }
 
-.FormButtons {
+.formButtons {
     display: flex;
     gap: 12px;
     margin-top: 8px;
 }
 
-.ButtonPrimary {
+.buttonPrimary {
     background: #0000ff;
     color: #fff;
     border: none;
@@ -259,11 +259,11 @@ h2 {
     cursor: pointer;
 }
 
-.ButtonPrimary:hover {
+.buttonPrimary:hover {
     background: #0000cc;
 }
 
-.ButtonSecondary {
+.buttonSecondary {
     background: #fff;
     color: #0000ff;
     border: 2px solid #0000ff;
@@ -274,7 +274,7 @@ h2 {
     cursor: pointer;
 }
 
-.ButtonSecondary:hover {
+.buttonSecondary:hover {
     background: #f0f0ff;
 }
 
